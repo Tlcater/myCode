@@ -1,0 +1,759 @@
+*{
+    margin:0px;
+    padding:0px;
+    list-style: none;
+    font-family:"SimSun";
+    font-style: normal;
+    text-decoration-line: none;
+}
+
+#wrap{
+    background-color: rgb(245, 245, 245);
+    z-index: 999;
+}
+.nav{
+    width:1190px;
+    margin: 0 auto;
+    height:35px;
+    background-color: rgb(245,245,245);
+    position:relative;
+}
+#navPart_area{
+    width:79px;
+    text-align: center;
+    position:relative;
+}
+.navPart_log_a1{
+    color:#f40;
+}
+.nav-arrow{
+    width:6px;
+    margin:0 3px;
+}
+#navPart{
+    float:left;
+    line-height:35px;
+}
+#navPart::after{
+    content:"";
+    clear:both;
+    display:block;
+}
+#navPart-Position{
+    font-size:12px;
+    display: inline-block;
+}
+#navPart-Position li{
+    float:left;
+    padding:0 6px;
+}
+#navPart_log div a{
+    margin-right:7px;
+}
+#navPart2{
+    float:right;
+    line-height:35px;
+    font-size:12px;
+    
+}
+#navPart2 li{
+    float:left;
+}
+#navPart2 span{
+    margin-right:7px;
+}
+#navPart2 div{
+    padding:0 6px;
+}
+#navPart2 img{
+    margin-right:5px;
+}
+.shopping{
+    width:12px;
+    height:12px;
+}
+#navPart a:hover{
+    color:#f40;
+    cursor: pointer;
+}
+#navPart span:hover{
+    color:#f40;
+    cursor:pointer;
+}
+#navPart2 span:hover{
+    color:#f40;
+    cursor:pointer;
+}
+.area-list{
+    border:1px solid rgb(245, 245, 245);
+    height:250px;
+    width:280px;
+    overflow: scroll;
+    background-color: #fff;
+}
+.area-list li{
+    height:30px;
+    color:#000;
+    background-color:#fff;
+    font-size:12px;
+    line-height:30px;
+    padding-left:6px;
+    width:250px;
+    text-align: left;
+}
+.list_area{
+    top:35px;
+    width: 250px;
+    display: none;
+    position:absolute;
+    z-index: 99999;
+}
+#navPart_area:hover{
+    background-color: #fff;
+}
+#navPart_area:hover .list_area {
+    display:block;
+}
+#navPart_area .area-list li:hover{
+    background-color: rgb(245, 245, 245);
+}
+#navPart2 .content{
+    display:none;
+    position: absolute;
+    top:35px;
+    width:90px;
+    padding:0px;
+    border:1px solid rgb(245,245,245); 
+    border-top: 0px;
+    z-index: 99999;
+    background-color: #fff
+}
+#navPart2 .mytaobao:hover .content{
+    display:block;  
+}
+#navPart2 .mytaobao .content li{
+    margin: 0px;
+    padding: 6px;
+    width:78px;
+}
+#navPart2 .mytaobao:hover {
+    background-color: #fff;
+}
+#navPart2 .mytaobao .content li:hover{
+    background-color:rgb(245, 245, 245);
+}
+
+#headnav{
+    height:97px;
+    width:1190px;
+    margin:0 auto;
+    z-index: 999;
+    position:relative;
+    padding-top: 24px;
+}
+#headnav #taobao{
+    float:left;
+    position:absolute;
+    left:0px;
+    width:190px;
+    height:58px;
+}
+#headnav h1{
+    display:inline-block;
+    width:170px;
+    height:58px;
+    margin-left:36px;
+}
+#headnav h1 a{
+    display:inline-block;
+    margin-top:8px;
+    width:170px;
+    height:58px;
+    background-image: url(./pic/taobao.png);
+    background-repeat: no-repeat;
+}
+#headnav .content{
+    float:left;
+    position:absolute;
+    left:258px;
+    height:87px;
+    font-size:0px;
+}
+#headnav .content .title{
+    margin-left: 17px;
+    display:inline-block;
+    /* border:1px solid red; */
+}
+#headnav .content .title .style{
+    float: left;
+    display:block;
+    width:36px;
+    height:22px;  
+    font-size:12px;
+    line-height: 22px;
+    text-align: center;
+    border-radius: 6px 6px 0 0;
+    background-color:#f40;
+    color:#fff;
+}
+#headnav .content .title li{
+    float: left;
+    display: block;
+    width: 36px;
+    height: 22px;
+    font-size: 12px;
+    line-height: 22px;
+    text-align: center;
+    color:#f40;
+    margin-right:4px;
+}
+#headnav .content .title li:hover {
+    float: left;
+    display: block;
+    width: 36px;
+    height: 22px;
+    font-size: 12px;
+    line-height: 22px;
+    text-align: center;
+    color: #f40;
+    background-color: rgb(255, 166, 133);
+    margin-right: 4px;
+}
+#headnav .content .search{
+    height:40px;
+    /* border:1px solid red; */
+}
+#headnav .content .search .frame{
+    width:553px;
+    height:40px;
+    border: 2px solid red;
+    border-radius:20px 0 0 20px;
+    float: left;
+}
+#headnav .content .search .frame div{
+    padding: 10px 0px 10px 10px;
+    display:inline-block;
+    width:547px;
+}
+#headnav .content .search .frame img{
+    width: 12px;
+    height: 22px;
+    float: left;
+}
+#headnav .content .search .frame .photo {
+    width: 22px;
+    height: 22px;
+    float: right;
+    margin-right:18px;
+}
+#headnav .content .search .frame input {
+    color:#bbb;
+    font-size:16px;
+    float: left;
+    margin-left: 20px;
+    outline: none;
+    border:0px;
+}
+#headnav .content .search .btn {
+    width: 74px;
+    height: 44px;
+    border-radius:0 22px 22px 0;
+    background-color: #f40;
+    color:#fff;
+    font-size:18px;
+    line-height: 44px;
+    text-align:center;
+    float: left;
+}
+#headnav .content .option ul{
+    margin: 6px 0;
+    display:inline-block;
+    width: 630px;
+}
+#headnav .content .option li{
+    color:rgb(53, 53, 53);
+    font-size: 12px;
+    margin-right:8px;
+    float: left;
+}
+#headnav .content .option li:hover {
+    color:#f40;
+    font-size: 12px;
+    margin-right: 8px;
+    float: left;
+}
+#headnav .content .option span{
+    color: rgb(53, 53, 53);
+    font-size: 12px;
+    margin-right: 8px;
+    float: right;
+}
+#headnav .content .option span:hover {
+    color:#f40;
+    font-size: 12px;
+    margin-right: 8px;
+    float: right;
+}
+#menu{
+    height:30px;
+    background-color:rgb(255,140,0);
+}
+#menu .wrap{
+    width:1190px;
+    height:30px;
+    margin:0 auto;
+    font-size:16px;
+    text-align:center;
+    line-height: 30px;
+    color:#fff;
+}
+#menu .wrap ul{
+    float:left;
+}
+#menu .wrap li{
+    float:left;
+    margin:0 3px;
+    padding: 0 6px;
+}
+#menu .wrap li:hover{
+    cursor: pointer;
+}
+#menu .wrap h2{
+    float:left;
+    width:190px;
+    height:30px;
+    background-color:#f40;
+    font-size:16px; 
+}
+.shuxian{
+    margin-left: 7px;
+    color:#fff;
+}
+
+#space{
+    background-color: #f5f5f5;
+}
+#ctn{
+    height:632px;
+    width: 1190px;
+    margin:0 auto;
+}
+#main{
+    width:900px;
+    height:632px;
+    margin:0 auto;
+    float: left;
+}
+#inner{
+    height:522px;
+    width:900px;
+    margin-bottom:10px;
+    position: relative;
+}
+#inner .inner-menu{
+    width:188px;
+    float: left;
+    border:1px solid #f40;
+    font-size:14px;
+    letter-spacing: 1px;
+    padding:5px 0px 3px 0px;
+    background-color:#fff;
+}
+#inner .menu-list{
+    position:absolute;
+    top: 0px;
+    right:0px;
+    width: 708px;
+    height:518px;
+    border:2px solid #f40;
+    font-size:108px;
+    background-color:#474747;
+    color:#fff;
+    line-height:518px;
+    text-align:center;
+    display:none;
+    z-index: 999999;
+}
+#inner>.inner-menu>ul>li:hover .menu-list{
+    display: block;
+}
+#inner>.inner-menu>ul>li:hover ul{
+    color:rgb(175, 47, 0);
+}
+#inner>.inner-menu>ul>li:hover{
+    background-color:rgb(255, 213, 197);
+}
+#inner .inner-menu ul li ul li{
+    float: left;
+    line-height:32px;
+}
+#inner .inner-menu ul li ul img{
+    float: right;
+    width:9px;
+    height:9px;
+    margin-right:10px; 
+    display:block;
+    padding-top: 12px; 
+}
+#inner .inner-menu ul li ul span{
+    float: left;
+    line-height: 32px;
+    font-size:16px;
+}
+#inner .inner-menu ul li ul li:hover{
+    color:#f40;
+    cursor: pointer;
+    text-decoration:underline;
+}
+#inner .inner-menu ul li ul{
+    padding-left: 25px;
+    height: 32px;
+}
+#inner .inner-menu ul li ul::before{
+    content:"";
+    display:block;
+    clear: both;
+}
+#ad{
+    width:900px;
+    height:100px;
+    background-color:#fff;
+    position: relative;
+}
+#info{
+    width:290px;
+    height:622px;
+    float: left;
+    margin-top: 10px;
+}
+.inner-ctn-left{
+    margin:10px 0px 0px 10px;
+    float: left;
+}
+.inner-ctn-banner{
+    width: 520px;
+    height:280px;
+    font-size:108px;
+    color:#f40;
+    line-height: 280px;
+    text-align:center;
+    background-image: url(./pic/banner.jpg);
+}
+.inner-ctn-srollpic{
+    font-size: 12px;
+}
+.inner-ctn-srollpic .title{
+    padding-top:11px;
+    position: relative;
+    
+}
+.inner-ctn-srollpic .title span{
+    position: absolute;
+    background-image: url(./pic/tianmao.png);
+    background-repeat:no-repeat;
+    width: 136px;
+    height:19px;  
+} 
+.inner-ctn-srollpic .title>em{
+   margin-left:136px;
+}
+.inner-ctn-srollpic .title em {
+    vertical-align: -3px;
+}
+.inner-ctn-srollpic .title div{
+    float: right;
+}
+.inner-ctn-srollpic .space li{
+    display:block;
+    float: left;
+    height: 3px;
+    background-color: #000;
+    width: 16.66%;
+    white-space: normal;
+}
+#space .inner-ctn-srollpic .content{
+    width:520px;
+    height:201px;
+} 
+#space .inner-ctn-srollpic .content img{
+    float: left;
+    width:25%;
+    height:201px;
+} 
+#space #inner .inner-ctn-right{
+    display: block;
+    float: right;
+    width:160px;
+    height: 512px;
+    margin:10px 10px 0px 0px;
+}
+.inner-ctn-right h5{
+    line-height: 24px;
+}
+.inner-ctn-right-bottom{
+    padding-top: 6px;
+}
+#space #ad {
+    width:856px;
+    height: 73px;
+    padding: 14px 14px 12px 20px;
+    font-size:0px;
+    overflow:hidden;
+}
+#space #ad .hotmail {
+    width:180px;
+    height:73px;
+    background: url(./pic/taobaotoutiao.png) 0px 8px no-repeat;
+    font-size: 12px;
+    color:#444444;
+    position: relative;
+    float: left;
+}
+#space #ad .hotmail p{
+    position: absolute;
+    margin-top:42px;
+}
+#space #ad .adnew{
+    display:block;
+    float: left;
+    width: 676px;
+}
+#space #ad a{
+    display: block;
+    height:73px;
+    overflow: hidden;
+}
+#space #ad .adnew p{
+    font-size: 12px;
+    margin-left: 144px;
+    color:#474747;
+}
+#space #ad .adnew img{
+    float: left;
+    width:130px;
+    height: 72px;
+    
+}
+#space #ad .adnew h4{
+    display: block;
+    font-size: 16px;
+    color: #000;
+    font-weight:bold;
+    margin-left: 144px;
+    line-height: 28px;
+}
+#ad .more {
+    position: absolute;
+    top: 14px;
+    right: 14px;   
+}
+#ad .more span{
+    display: inline-block;
+    font-size: 12px;   
+}
+#ad .more img{
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    display: inline-block;
+    vertical-align: -1.5px;
+}
+#space #info .logo{
+    width:100%;
+    height:145px;
+    background:url(./pic/logobackground.png) no-repeat;
+    background-size:290px 145px;
+    overflow: hidden;
+}
+#space #info .logo .logimg{
+    border-radius: 50%;
+    width:50px;
+    height:50px;
+    margin:0 auto;
+    overflow: hidden;
+    border:2.5px solid #fff;
+}
+#space #info .logo span{
+    display:block;
+    font-size:12px;
+    text-align:center;
+    font-weight: bold;
+    line-height: 17px;
+}
+#space #info .logo a{
+    display: inline-block;
+    font-size: 12px;
+    color: #f40; 
+    padding:0px 10px 0px 0px;
+    border-radius:9px;
+    background-color: rgb(255, 236, 239);
+}
+#space #info .logo p{
+   text-align:center;
+}
+#space #info .logo p a span{
+    display: inline-block;
+    width:16px;
+    height: 16px;
+    background: url(./pic/element.png) 0px -572.5px no-repeat;
+    vertical-align:-2px;
+}
+#space #info .logo p a em{
+    display: inline-block;
+    vertical-align:1px;
+}
+#space #info .logo .btn{
+    height: 40px;
+    margin: 8px 0px 0px 15px;
+    font-size: 14px;
+    line-height: 25px;
+}
+#space #info .logo .btn .btn1{
+    display:block;
+    width:92px;
+    height:25px;
+    margin-right: 7px;
+    background-color:#f40;
+    color:#fff;
+    padding:0px;
+    text-align:center;
+    float:left;
+}
+#space #info .logo .btn .btn2 {
+    display:block;
+    width: 75px;
+    height: 25px;
+    margin-right: 7px;
+    background-color: #f40;
+    color: #fff;
+    padding:0px;
+    text-align:center;
+    float:left;
+}
+#space #info .logo .btn .btn3 {
+    display:block;
+    width: 75px;
+    height: 25px;
+    margin-right: 7px;
+    background-color: #f40;
+    color: #fff;
+    padding:0px;
+    text-align:center;
+    float:left;
+}
+#space #info .new{
+    height:26px;
+    background-color:rgb(255, 216, 222);
+}
+#space #info .new a{
+    line-height: 26px;
+    margin: 82px;
+    color:#f40;
+    font-size: 12px;
+    margin: 0px 0px 0px 82px;
+}
+#space #info .new a span{
+    vertical-align: 4px;
+    margin-left: 32px;
+    font-size: 0px;
+    border-style: solid;
+    border-width: 5px 0px 5px 7px;
+    border-color:transparent transparent transparent #f40;
+}
+#space #info .rule{
+    width: 100%;
+    height: 98px;
+    padding-top:10px;
+    background-color: #fff;
+}
+#space #info .rule ul{
+    display:inline-block;
+    padding: 0 8px;
+}
+#space #info .rule>ul>li{
+    float: left;
+    margin:0px 11px;
+    font-size:12px;
+    display: block;
+    width: 32px;
+    height: 20px;
+    text-align: center;
+}
+#space #info .rulediv ul{
+    display: none;
+    width: 290px;
+    height: 50px;
+    padding: 9px 0px 6px;
+    text-align: center;
+}
+#space #info .rulediv ul:first-child{
+    display: block;
+    width:290px;
+    height: 50px;
+}
+#space #info .rule>ul>li:hover{
+    border-bottom: 2px solid #f40;
+    cursor:pointer;
+    font-weight: bold;
+    color:#f40;
+}
+#space #info .rulediv ul li{
+    display: inline-block;
+}
+
+#space #info .list>ul{
+    width: 290px;
+    height: 232px;
+    border-right: 1px solid red;
+    border-bottom: 1px solid red;
+    background-color:#fff;
+}
+
+#space #info .list>ul>li{
+    float: left;
+    width:24.65%;
+    height: 33%;
+    border-top:1px solid red;
+    border-left:1px solid red;
+    text-align:center;
+}
+#space #info .list>ul>li:hover p{
+    color: #f40;
+}
+#space #info .list a{
+    display: inline-block;
+    width:100%;
+    height: 100%;
+}
+#space #info .list p{
+    font-size: 12px;
+    color:#333;
+}
+#space #info .list .phonemoney{
+    display: inline-block;
+    margin-top: 11px; 
+    width:24px;
+    height: 24px;
+    background: url(./pic/list.png) 0px 0px no-repeat;
+}
+#space #info .list .phonemoney1{
+    display: inline-block;
+    margin-top: 11px;
+    width: 24px;
+    height: 24px;
+    background: url(./pic/list.png) 0px -45px no-repeat;
+}
+#space #info .list .phonemoney2 {
+    display: inline-block;
+    margin-top: 11px;
+    width: 24px;
+    height: 24px;
+    background: url(./pic/list.png) 0px -90px no-repeat;
+}
+#space #info .list .phonemoney3{
+    display: inline-block;
+    margin-top: 11px;
+    width: 24px;
+    height: 24px;
+    background: url(./pic/list.png) 0px -132px no-repeat;
+}
