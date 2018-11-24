@@ -1,0 +1,24 @@
+.snake{
+    width:20px;
+    height:20px;
+    background-color:#f40;
+    position:absolute;
+}
+*{
+    margin:0px;
+    padding:0px;
+}
+.wrap{
+    width:404px;
+    height: 404px;
+    border:2px solid #333;
+    margin: 60px auto ;
+    position:relative;
+}
+.food{
+    width:20px;
+    height:20px;
+    border-radius:50%;
+    background-color:#f68;
+    position:absolute;
+}
