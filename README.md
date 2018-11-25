@@ -12,4 +12,15 @@ git reset --hard HEAD^^  ('^'代表退回上个版本,"^^"代表退回上上个�
 git reset --hard 546cd  ('546cd'commit的id前几个字符,可以退回制定id的版本) 
 
 git reflog 查询之前输入的命令
-#
+# 修改撤销
+git checkout -- file  //放弃工作区的修改
+
+git reset HEAD file  //放弃暂存区的修改
+
+git rm file 
+git commit -m "删除file"
+//删除版本的文件
+# 分支创建与合并
+git branch dev //创建dev分支
+git checkout dev //切换到dev分支
+git checkout -b dev //创建并且切换到dev分支
