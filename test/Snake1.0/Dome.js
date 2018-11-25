@@ -4,6 +4,8 @@ var food;
 var key;
 var countY = 0;
 var countX = 0;
+SnakebodyBoxStepX = [];
+SnakebodyBoxStepY = [];
 var timer = setInterval(
     function(){
         move(key);
@@ -90,20 +92,17 @@ function eat(){
 }
 //蛇身的移动
 function SnakebodyMove(){
-    //声明一个数组记录SnakebodyBox每个元素的位置
-    SnakebodyBoxStepX = []; 
-    SnakebodyBoxStepY = []; 
+    //声明一个数组记录SnakebodyBox每个元素的位置 
     if(SnakebodyBox[0]){
-        SnakebodyBox[0].style.top = snakeStep.y+'px';
+        for(var i = 0;i<SnakebodyBox.length;i++){  //将Snakebodys上的数字存起来
+            SnakebodyBoxStepX[i] = SnakebodyBox[i].offsetLeft;
+            SnakebodyBoxStepY[i] = SnakebodyBox[i].offsetTop;
+        }  
         SnakebodyBox[0].style.left = snakeStep.x+'px';
-        for(var j=0;j<SnakebodyBox.length;j++){
-            SnakebodyBoxStepX[j] = SnakebodyBox[j].offsetLeft;
-            SnakebodyBoxStepY[j] = SnakebodyBox[j].offsetTop;  
-        }
-    }else if(SnakebodyBox.length>1){
-        for (var i = 0; i < SnakebodyBox.length; i++) {
-            SnakebodyBox[i+1].style.left = SnakebodyBoxStepX[j];
-            SnakebodyBox[i+1].style.top = SnakebodyBoxStepY[j];
+        SnakebodyBox[0].style.top = snakeStep.y+'px';
+        for(var j = 1;j<SnakebodyBox.length;j++){
+            SnakebodyBox[j].style.left = SnakebodyBoxStepX[j-1] + "px";
+            SnakebodyBox[j].style.top = SnakebodyBoxStepY[j-1] + "px";
         }
     }
 }
