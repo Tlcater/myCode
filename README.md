@@ -24,3 +24,5 @@ git commit -m "删除file"
 git branch dev //创建dev分支
 git checkout dev //切换到dev分支
 git checkout -b dev //创建并且切换到dev分支
+git merge dev //将dev的分支合并到当前分支
+git branch -d branchname //删除指定的分支
